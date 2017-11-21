@@ -1,5 +1,3 @@
-
-
 class Movies():
     ''' Class encapsulates properties of a movie '''
 

@@ -3,6 +3,8 @@ import media
 
 ''' file create movies to be loaded from an instance of Media class '''
 
+# Create objects of Class Movie for the different movies we wish to display
+
 alfie = media.Movies("Alfie",
                 "http://www.gstatic.com/tv/thumb/movieposters/34949/p34949_p_v8_aa.jpg",
                 "https://www.youtube.com/watch?v=T-whOtC8aak")
@@ -27,6 +29,7 @@ everythings_gone_green = media.Movies("Everything's Gone Green",
                                 "http://www.gstatic.com/tv/thumb/dvdboxart/163232/p163232_d_v8_aa.jpg",
                                 "https://www.youtube.com/watch?v=bu8Gtbljw4E")
 
+# Populate the list of movies for input to the open_movies_page
 
 movies = [alfie, inception, midnight_in_paris, lord_of_the_rings, devils_advocate, everythings_gone_green]
 
