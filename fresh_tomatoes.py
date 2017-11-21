@@ -43,6 +43,10 @@ main_page_head = '''
             background-color: #EEE;
             cursor: pointer;
         }
+        .movie-tile img{ box-shadow: 0 0 5em #FF051E;
+        }
+        @media (min-width: 768px) { .navbar-default.navbar-brand { color: #fff !important;}}
+      
         .scale-media {
             padding-bottom: 56.25%;
             position: relative;

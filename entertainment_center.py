@@ -3,7 +3,7 @@ import media
 
 ''' file create movies to be loaded from an instance of Media class '''
 
-alfie = media.Movies("alfie",
+alfie = media.Movies("Alfie",
                 "http://www.gstatic.com/tv/thumb/movieposters/34949/p34949_p_v8_aa.jpg",
                 "https://www.youtube.com/watch?v=T-whOtC8aak")
 
