@@ -49,11 +49,12 @@ everythings_gone_green = media.Movies("Everything's Gone Green",
 
 #movies_ = [alfie, inception, midnight_in_paris, lord_of_the_rings, devils_advocate, everythings_gone_green]
 #fresh_tomatoes.open_movies_page(movies)
+
 list_of_movies = ["The Devil's Advocate", "Inception",  "Alfie", "Everything's Gone Green", "American Hustle", "Lord of The Rings"]
 tmdb.API_KEY = 'a2c2494f6db6d934edc2563b347047bb'
 search = tmdb.Search()
 response = search.movie(query="Inception")
-print (search.results)
+#print (search.results)
 #print response
 i = 1
 j = 0
@@ -61,12 +62,12 @@ count = len(list_of_movies)
 convert(list_of_movies[j]) 
 build_movies = []
 x_loop_must_break = False
-'''
+
 while j < count :
        
         search = tmdb.Search()
         response = search.movie(query=list_of_movies[j])
-        print (search.results)
+        #print (search.results)
         for s in search.results:
                 #print(s['title'], s['id'], s['poster_path'])
                 movie_name = convert(list_of_movies[j])
@@ -87,5 +88,5 @@ while j < count :
 
         j += 1
 
-#print build_movies 
-'''
+print build_movies 
+

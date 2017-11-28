@@ -9,7 +9,7 @@ Source code for a Movie Trailer website.
 1. Install Python
 2. Clone the repository into your local computer
 3. Install 
-tmdbsimple is available on the Python Package Index (PyPI)[link](https://pypi.python.org/pypi/tmdbsimple.)
+tmdbsimple is available on the Python Package Index [PyPI](https://pypi.python.org/pypi/tmdbsimple.)
 
 You can install tmdbsimple using one of the following techniques.
 
