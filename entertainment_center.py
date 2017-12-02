@@ -1,7 +1,5 @@
 import fresh_tomatoes
 import media
-import urllib
-import json
 import re
 import tmdbsimple as tmdb
 from unidecode import unidecode
@@ -9,7 +7,7 @@ from unidecode import unidecode
 
 ''' file create movies to be loaded from an instance of Media class '''
 
-    #method to convert movie name to snake case https://stackoverflow.com/a/1176023/851056
+#method to convert movie name to snake case https://stackoverflow.com/a/1176023/851056
 def convert(name):
     new_name = name.replace(" ", "").replace("'","")
     s1 = re.sub('(.)([A-Z][a-z]+)', r'\1_\2', new_name)
@@ -18,17 +16,11 @@ def convert(name):
 def remove_non_ascii(text):
     return text.encode("utf-8")
     
-    # For call to str(). Prints readable form
-def __str__(input):
-    return '%s' % (input)
+# Create list of movies here. Add as many as you wish
+list_of_movies = ["The Devil's Advocate", "Inception",  "Alfie", "Temple Grandin", "American Hustle", "Lord of The Rings", "Death Note", "Batman Begins", "Gone Girl"]
 
-list_of_movies = ["The Devil's Advocate", "Inception",  "Alfie", "Temple Grandin", "American Hustle", "Lord of The Rings"]
 tmdb.API_KEY = 'a2c2494f6db6d934edc2563b347047bb'
-search = tmdb.Search()
-response = search.movie(query="Inception")
-# print (search.results)
-# print response
-# i = 1
+
 j = 0
 count = len(list_of_movies)
 convert(list_of_movies[j])

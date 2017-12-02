@@ -17,6 +17,7 @@ main_page_head = '''
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
     <style type="text/css" media="screen">
         body {
             padding-top: 80px;
