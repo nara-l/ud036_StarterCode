@@ -10,15 +10,17 @@ main_page_head = '''
 <head>
     <meta charset="utf-8">
     <title>Fresh Tomatoes!</title>
-
+    <link rel="icon" href="favicon.png" type="image/x-icon">
     <!-- Bootstrap 3 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/css/bootstrap-theme.css">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
     <style type="text/css" media="screen">
         body {
             padding-top: 80px;
+            font-family: 'Vollkorn', serif;
         }
         #trailer .modal-dialog {
             margin-top: 200px;
@@ -40,8 +42,12 @@ main_page_head = '''
             padding-top: 20px;
         }
         .movie-tile:hover {
-            background-color: #EEE;
+            /* background-color: #00a5d2;*/
             cursor: pointer;
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+            -webkit-transition: 0.6s ease;
+            transition: 0.6s ease;
         }
         .movie-tile img{ box-shadow: 0 0 5em #00a5d2;
         }

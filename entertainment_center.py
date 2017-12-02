@@ -49,12 +49,11 @@ while j < count :
         trailer_youtube_url =  video
         
         i = media.Movies(remove_non_ascii(title), remove_non_ascii(poster_image_url), remove_non_ascii(trailer_youtube_url))
-        movie_name = i.__str__()
-        print movie_name #out puts as it should
-        build_movies.append(movie_name)
+        print i #out puts as it should
+        build_movies.append(i)
 
 
         j += 1
 
 print build_movies #outputs with extra quotation marks which causes method below to throw an error
-#fresh_tomatoes.open_movies_page(build_movies)
+fresh_tomatoes.open_movies_page(build_movies)
